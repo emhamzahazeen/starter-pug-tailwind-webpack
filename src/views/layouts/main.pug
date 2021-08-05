@@ -1,0 +1,14 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Pug Sample
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  body
+    div
+      | "Sample"
+    img(src="./assets/img/logo.png")
+    block header
+    block content
+    block footer
+    include ../partials/scripts

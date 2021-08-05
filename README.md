@@ -1,0 +1,1 @@
+# hazeen-fooware-manager

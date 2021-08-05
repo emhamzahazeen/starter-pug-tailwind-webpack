@@ -1,0 +1,53 @@
+{
+  "name": "cybnor-fooware-manager",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build:dev": "webpack --config config/webpack.config.dev.js",
+    "build:prod": "webpack --config config/webpack.config.production.js",
+    "lint": "eslint ./src/ --ignore-path .gitignore --ignore-pattern internals/scripts",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:watch": "npm run lint --watch",
+    "dev:server": "webpack serve --config config/webpack.config.dev.js"
+  },
+  "browser": "client",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.14.3",
+    "@babel/plugin-transform-runtime": "7.14.3",
+    "@babel/preset-env": "7.14.2",
+    "@babel/runtime": "7.14.0",
+    "autoprefixer": "10.3.1",
+    "babel-loader": "8.2.2",
+    "clean-webpack-plugin": "4.0.0-alpha.0",
+    "css-loader": "6.2.0",
+    "eslint": "7.27.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-standard": "16.0.2",
+    "eslint-plugin-import": "2.23.3",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-promise": "4.3.1",
+    "html-loader": "2.1.2",
+    "html-webpack-plugin": "5.3.1",
+    "postcss": "8.3.6",
+    "postcss-loader": "6.1.1",
+    "prettier": "2.3.0",
+    "prettier-eslint": "12.0.0",
+    "pug": "3.0.2",
+    "pug-html-loader": "1.1.5",
+    "style-loader": "3.2.1",
+    "stylelint": "13.13.1",
+    "stylelint-config-standard": "22.0.0",
+    "stylelint-order": "4.1.0",
+    "tailwindcss": "2.2.7",
+    "webpack": "5.37.1",
+    "webpack-cli": "4.7.0",
+    "webpack-dev-server": "3.11.2"
+  },
+  "dependencies": {
+
+  }
+}
